@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="marginStyle.css">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Noto+Sans+JP:wght@500&family=Playfair+Display&family=Roboto+Condensed&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+<style>
+</style>
+</head>
+
+<body>
+
+	<div id="navbar" class="navbar">
+
+    <a  class="active" href="javascript:void(0)">Portfolio</a>
+    <div class="dropdown">
+        <button class="dropbtn" href="javascript:void(0)">Order</button>
+        <div class="dropdown-content">
+            <a href="#">Order Status</a>
+            <a href="#">Trade Information</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn" href="javascript:void(0)">Market Feed</button>
+        <div class="dropdown-content">
+            <a href="#">Watchlist 1</a>
+            <a href="#">Watchlist 2</a>
+            <a href="#">Watchlist 3</a>
+            <a href="#">Watchlist 4</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn" href="javascript:void(0)">Report</button>
+        <div class="dropdown-content">
+            <a href="#">Margin</a>
+            <a href="#">Order Book</a>
+            <a href="#">Holdings</a>
+        </div>
+    </div>
+
+      <a class="searchLogin dropdown" href="javascript:void(0)">Login</a>
+      <a href="javascript:void(0);" class="icon" onmouseover="smallMenu()" onclick="smallMenu()"><i class="fa fa-bars"></i></a>
+    <input class="searchBar" type="text" name="search bar" placeholder="Search...">
+    
+	</div>
+
+  <div class="header">
+    <h2>5Paisa Portfolio</h2>
+   </div>
+
+<div class="icon-bar">
+	<a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+	<a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+	<a href="#" class="google"><i class="fa fa-google"></i></a> 
+	<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+	<a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+	<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+  </div>
+
+<div class="content">
+  <div class="tooltip">
+    <h2 class=>Portfolio</h2>
+    <span class="tooltiptext">Portfolio</span>
+  </div>
+  <p>Progress bar code and other stuff</p>
+  <div class="barContainer">
+    <div class="barValue">70%</div>
+  </div>
+
+	<div class="sidebar">
+		<h3>Sidebar</h3>
+		<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  </div>
+  
+	<div class="mainbar r">
+  		<h3>Mainbar</h3>
+  		<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  
+			<table class="marginTable center">
+        <caption><b>table heading</b></caption>
+        <tbody>
+				<tr>
+					<th>alb</th>
+					<td>random data</td>
+				</tr>
+				<tr>
+					<th>adhoc</th>
+					<td>random data</td>
+        </tr>
+        <tr>
+					<th>GHV</th>
+					<td>rd</td>
+				</tr>
+				<tr>
+					<th>GHV%</th>
+					<td>random</td>
+        </tr>
+        <tr>
+					<th>Gross Margin</th>
+					<td>random data</td>
+				</tr>
+				<tr>
+					<th>Margin blocked </th>
+					<td>random ta</td>
+        </tr>
+      </tbody>
+			</table>
+  		<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  
+  </div>
+  
+</div>
+
+<div class="footer">
+	<h2>Footer</h2>
+	<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <h3>Contact</h3>
+  <p>If you have any questions, do not hesitate to ask them.</p>
+  <i class="fa fa-map-marker" style="width:30px"></i> Mumbai ,India<br>
+  <i class="fa fa-phone" style="width:30px"></i> Phone: +91 9876543210<br>
+  <i class="fa fa-envelope" style="width:30px"> </i> Email: contact@5paisa.com<br>
+  <form action="/action_page.php" target="_blank">
+    <p><input class="footerForm" type="text" placeholder="Name" name="Name"></p>
+    <p><input class="footerForm" type="text" placeholder="Email" required name="Email"></p>
+    <p><input class="footerForm" type="text" placeholder="Message" required name="Message"></p>
+    <p><button class="footerSubmit" type="submit">SEND MESSAGE</button></p>
+  </form>  
+</div>
+  
+  <script>
+function smallMenu() {
+    var x = document.getElementById("navbar");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+    document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+
+</html>
+<!--function stickyBar() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}-->
