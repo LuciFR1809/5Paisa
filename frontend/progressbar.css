@@ -1,0 +1,35 @@
+/*font-family: 'Amatic SC', cursive;//weird writing type
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+body{
+ font-family: 'Playfair Display', serif;
+ text-align: center;
+}
+
+.barContainer {
+  width: 60vw;
+  background-color: #ddd;
+  border-radius:50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+}
+
+.barValue {
+  text-align: left;
+  font-family: 'Amatic SC', cursive;
+  padding:10px;
+  color: white;
+  width: 70%;
+  background-color: #4CAF50;
+  border-radius:50px;
+}
+.content:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

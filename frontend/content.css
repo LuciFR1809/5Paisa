@@ -1,0 +1,11 @@
+/*font-family: 'Amatic SC', cursive;//weird writing type
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+.content:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

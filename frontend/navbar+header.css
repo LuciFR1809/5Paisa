@@ -1,0 +1,230 @@
+/*font-family: 'Amatic SC', cursive;//weird writing type
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+.header {
+  height: 20vh;
+  width: 100%;
+  background-image: url(https://images.hive.blog/0x0/https://files.peakd.com/file/peakd-hive/v4vapid/9MW59rEj-Stonks7.gif);
+  background-position:bottom ;
+  background-repeat: repeat;
+  background-size: contain;
+  padding: 30px;
+  margin: 0;
+  top: 0%;
+  left:0%;
+  font-size: 5.5vh;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  vertical-align: bottom;
+  color:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+  
+}
+
+.navbar {
+  overflow: visible;
+  position: fixed;
+  float:left;
+  border-radius: 50px;
+  background-color:#EAF0F1;
+  margin-bottom: 25px;
+  width: 100%;
+  padding: 3px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  padding: 14px;
+  border-radius: 50px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.navbar a.active,.navbar .dropdown .active {
+  background-color:navy;
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn{
+  border: none;  
+  border-radius: 50px;
+  outline: none;
+  color:black;
+  padding: 14px;
+  margin: 0;
+  font-size: 17px; 
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.dropbtn2{
+  border: none;  
+  border-radius: 50px;
+  outline: none;
+  color:black;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-radius: 50px;
+  min-width: 160px;
+  z-index: 1;
+  background-color:#EAF0F1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+}
+
+.dropdown-content a {
+  float: none;
+  display: block;
+  padding: 12px 16px;
+  background-color: #EAF0F1;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.navbar a:hover:not(.active), .dropbtn button:hover:not(.active){
+  background-color:#4834DF ;
+  color: white;
+}
+
+.dropbtn:hover{
+  border-radius:50px;
+  background-color:#4834DF ;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  border-radius: 50px;
+  background-color:#4834DF;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.searchBar{
+  width: 25vw;
+  box-sizing: border-box;
+  padding: 15px 20px 15px 40px;
+  margin-right: 3px 10px;
+  border: 2px solid #EAF0F1;
+  border-radius: 50px;
+  background-image: url('https://img.icons8.com/android/24/000000/search.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  font-size: 16px;
+  align-items: center;
+  transition: width 0.5s ease-in-out;
+}
+
+.searchBar input{
+  float: left;
+}
+
+.searchBar:hover{
+  width:30vw;
+}
+.drpc {
+  display: none;
+  float: right;
+  position: absolute;
+  overflow: auto;
+  border-radius:0px 0px 50px 50px  ;
+  min-width: 160px;
+  z-index: 1;
+  background-color:#EAF0F1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+}
+
+.drpc a {
+  float: none;
+  display: block;
+  padding: 12px 16px;
+  right: 100%;
+  background-color: #EAF0F1;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.show {
+  display:block;
+}
+.searchLogin{
+  float: right;
+}
+
+@media screen and (max-width: 660px) {
+  .navbar,.dropdown{
+    float:left;
+  display: inline-block;
+  width:100%;
+  }
+  .searchBar:hover{
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .navbar{
+    position:fixed;
+  }
+  .navbar a, .dropdown .dropbtn {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: inline-block;
+  }
+  .searchBar{
+      float: left;
+      width: 50vw;
+    }
+}
+
+@media screen and (max-width: 660px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .navbar.responsive .dropdown {float: none;}
+  .navbar.responsive .dropdown-content {position: relative;}
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+.navbar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+

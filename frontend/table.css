@@ -1,0 +1,57 @@
+/*font-family: 'Amatic SC', cursive;//weird writing type
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+.marginTable{
+  background-color: rgb(192, 247, 247);
+overflow:auto;
+  table-layout: auto;
+  display: inline-block;
+  align-items: center;
+text-align: center;
+font-family: 'Playfair Display', serif;
+vertical-align: middle;
+padding: 15px;
+margin: 10px;
+border: none;
+border-collapse: collapse;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+table.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.marginTable tbody{
+  box-shadow: black;
+}
+
+.marginTable th{
+  border-right: 2px solid #b1b1b1;
+}
+
+.marginTable tr:nth-child(even){
+  background-color: #fdfdfd;
+}
+
+.marginTable tr:nth-child(odd){
+background-color: #f1f1f1;
+}
+
+.marginTable th,.marginTable td{
+padding: 10px;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+.marginTable tr:hover {
+  background-color: #ddd;
+}
+
+.content:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
